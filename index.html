@@ -14,7 +14,6 @@
   </head>
   <body>
     <button onclick="showContent()">Show hidden content</button>
-    <div class="users-container"></div>
 
     <template id="user-template">
       <div class="user-container" id="card">
@@ -30,7 +29,20 @@
           </p>
         </div>
       </div>
+      <div class="user-container" id="card2">
+        <img src="./what.jpg" alt="User Image" class="user-image" />
+        <a class="btn-close" onclick="closeCard2()">+</a>
+        <div class="user-details">
+          <h2 class="user-name">Senku Ishigami</h2>
+          <p class="user-email"></p>
+          <p class="user-age">3,700 years old</p>
+          <p class="user-info">
+            I am a technology kid, who's excited by mecha, space and Doraemon! I will save all of humanity, without exception, with the power of science!
+          </p>
+        </div>
+      </div>
     </template>
+  </div>
 
     <script src="script.js"></script>
   </body>

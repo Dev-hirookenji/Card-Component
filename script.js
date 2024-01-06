@@ -10,3 +10,10 @@ function closeCard() {
     card.style.display = "none";
   }, 300);
 }
+function closeCard2() {
+  var card2 = document.getElementById("card2");
+  card2.style.opacity = 0;
+  setTimeout(function () {
+    card2.style.display = "none";
+  }, 300);
+}
