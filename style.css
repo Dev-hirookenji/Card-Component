@@ -22,6 +22,12 @@ p {
   box-shadow: 1px 1px 10px rgb(71, 70, 70);
   border-radius: 15px;
   overflow: hidden;
+  -webkit-mask-image: linear-gradient(-45deg, #000 25%, rgba(0, 0, 0, .2) 50%, #000 75%);
+  mask-image: linear-gradient(-45deg, #000 25%, rgba(0, 0, 0, .2) 50%, #000 75%);
+  -webkit-mask-size: 800%;
+  mask-size: 800%;
+  -webkit-mask-position: 100% 0;
+  mask-position: 100% 0;
   transition: 0.5s;
 }
 .user-details {
@@ -37,6 +43,10 @@ p {
 .user-container:hover {
   rotate: 5deg;
   transform: scale(1.1);
+  transition: -webkit-mask-position 2s ease, mask-position 2s ease;
+  -webkit-mask-position: 0 100%;
+  mask-position: 0 100%;
+  opacity: 1;
 }
 .btn-close {
   position: absolute;
@@ -47,6 +57,9 @@ p {
 }
 a {
   margin-left: 200px;
+}
+.user-container:hover{
+  left:100%;
 }
 .btn-close:hover {
   color: red;
